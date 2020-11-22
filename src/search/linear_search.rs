@@ -1,5 +1,5 @@
-pub fn linear_search<T: Ord>(arr: &[T], target: &T) -> Result<usize, usize> {
-    for (i, e) in arr.iter().enumerate() {
+pub fn linear_search<T: Ord>(slice: &[T], target: &T) -> Result<usize, usize> {
+    for (i, e) in slice.iter().enumerate() {
         if e == target {
             return Ok(i)
         }
